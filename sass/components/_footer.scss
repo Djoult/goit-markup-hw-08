@@ -1,0 +1,16 @@
+.footer {
+  background-color: $hero-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.logo_secondary--white {
+  color: $primary-color;
+}
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
