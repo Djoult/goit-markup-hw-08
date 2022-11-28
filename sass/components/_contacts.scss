@@ -1,6 +1,9 @@
 .contacts {
   display: flex;
   margin-left: auto;
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
 }
 .contacts__item:not(:first-child) {
   margin-left: 50px;

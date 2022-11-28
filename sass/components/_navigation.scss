@@ -2,9 +2,20 @@
   display: flex;
   align-items: center;
 }
+.navigation {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
 .menu {
   display: flex;
   margin-left: 93px;
+  // @media screen and (max-width: $tablet) {
+  //   display: none;
+  // }
 }
 .menu__item:not(:first-child) {
   margin-left: 50px;
