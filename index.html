@@ -18,6 +18,87 @@
           <a href="./index.html" class="logo header__logo"
             ><span class="logo__primary">Web</span><span class="logo__secondary">Studio</span></a
           >
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+              <svg class="js-close-menu__icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-cross"></use>
+              </svg>
+            </button>
+
+            <ul class="mobile-menu list">
+              <li class="mobile-menu__item">
+                <a href="./index.html" class="link mobile-menu__link mobile-menu__link--current"
+                  >Студія</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="link mobile-menu__link">Портфоліо</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="link mobile-menu__link">Контакти</a>
+              </li>
+            </ul>
+
+            <ul class="mobile-contacts list">
+              <li class="mobile-contacts__item">
+                <a href="tel:+380961111111" class="link mobile-contacts__link">+38 096 111 11 11</a>
+              </li>
+              <li class="mobile-contacts__item">
+                <a href="mailto:info@devstudio.com" class="link mobile-contacts__link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mobile-socials list">
+              <li class="mobile-socials__item">
+                <a
+                  href="https://www.instagram.com/?hl=uk"
+                  class="mobile-socials__link link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-socials__item">
+                <a
+                  href="https://twitter.com/?lang=uk"
+                  class="mobile-socials__link link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mobile-socials__item">
+                <a
+                  href="https://www.facebook.com/"
+                  class="mobile-socials__link link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mobile-socials__item">
+                <a
+                  href="https://ua.linkedin.com/"
+                  class="mobile-socials__link link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </div>
+
           <ul class="menu list">
             <li class="menu__item">
               <a href="./index.html" class="link menu__link menu__link--current">Студія</a>
@@ -144,7 +225,12 @@
           <ul class="team__list list">
             <li class="team__item">
               <article class="teammate">
-                <img src="./images/img1.jpg" alt="Ігор Дем'яненко" width="270" />
+                <img
+                  src="./images/img1.jpg"
+                  class="teammate__photo"
+                  alt="Ігор Дем'яненко"
+                  width="270"
+                />
                 <div class="teammate__info">
                   <h3 class="teammate__name">Ігор Дем'яненко</h3>
                   <p class="teammate__post">Product Designer</p>
@@ -197,7 +283,12 @@
             </li>
             <li class="team__item">
               <article class="teammate">
-                <img src="./images/img2.jpg" alt="Ольга Рєпіна" width="270" />
+                <img
+                  src="./images/img2.jpg"
+                  class="teammate__photo"
+                  alt="Ольга Рєпіна"
+                  width="270"
+                />
                 <div class="teammate__info">
                   <h3 class="teammate__name">Ольга Рєпіна</h3>
                   <p class="teammate__post">Frontend Developer</p>
@@ -250,7 +341,12 @@
             </li>
             <li class="team__item">
               <article class="teammate">
-                <img src="./images/img3.jpg" alt="Микола Тарасов" width="270" />
+                <img
+                  src="./images/img3.jpg"
+                  class="teammate__photo"
+                  alt="Микола Тарасов"
+                  width="270"
+                />
                 <div class="teammate__info">
                   <h3 class="teammate__name">Микола Тарасов</h3>
                   <p class="teammate__post">Marketing</p>
@@ -303,7 +399,12 @@
             </li>
             <li class="team__item">
               <article class="teammate">
-                <img src="./images/img4.jpg" alt="Михайло Єрмаков" width="270" />
+                <img
+                  src="./images/img4.jpg"
+                  class="teammate__photo"
+                  alt="Михайло Єрмаков"
+                  width="270"
+                />
                 <div class="teammate__info">
                   <h3 class="teammate__name">Михайло Єрмаков</h3>
                   <p class="teammate__post">UI Designer</p>
@@ -360,7 +461,7 @@
       <!-- Clients section -->
       <section class="clients section">
         <div class="container">
-          <h2 class="clients__title title">Чим ми займаємося</h2>
+          <h2 class="clients__title title">Наші клієнти</h2>
           <ul class="clients__list list">
             <li class="clients__item" aria-label="YA&CO">
               <a href="" class="clients__link"
@@ -435,7 +536,7 @@
         <!-- Socials -->
         <div class="footer-socials">
           <p class="footer-socials__subtitle">приєднуйтесь</p>
-          <ul class="socials list">
+          <ul class="socials footer__socials list">
             <li class="socials__item">
               <a
                 href="https://www.instagram.com/?hl=uk"
@@ -593,5 +694,12 @@
     </div>
     <!-- Scripts -->
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

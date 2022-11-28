@@ -1,0 +1,22 @@
+.footer {
+  background-color: $hero-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+.footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.logo_secondary--white {
+  color: $primary-color;
+}
+.footer__container {
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.footer__socials {
+  margin-bottom: 60px;
+}

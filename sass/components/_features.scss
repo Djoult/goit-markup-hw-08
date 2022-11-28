@@ -1,0 +1,30 @@
+.features__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: $team-section-bg-color;
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+  height: 120px;
+}
+.features__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.features__name {
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.features__text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $phone-color;
+}

@@ -1,0 +1,42 @@
+.clients__title {
+  margin-bottom: 30px;
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
+}
+.clients__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: $indent;
+  cursor: pointer;
+}
+.clients__item {
+  display: block;
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 210px;
+  height: 92px;
+  @include border-generator($clients-logo-color);
+  border-radius: 4px;
+  color: $clients-logo-color;
+  transition: color $timing-function, border-color $timing-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+  }
+}
+
+.clients__logo {
+  display: block;
+  fill: currentColor;
+}
