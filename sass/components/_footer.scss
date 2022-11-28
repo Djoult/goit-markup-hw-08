@@ -12,11 +12,14 @@
   color: $primary-color;
 }
 .footer__container {
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: baseline;
+    flex-wrap: wrap;
   }
 }
 .footer__socials {
-  margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
