@@ -12,4 +12,7 @@
 }
 .logo__secondary {
   color: $logo-color;
+  &--white {
+    color: $primary-color;
+  }
 }
