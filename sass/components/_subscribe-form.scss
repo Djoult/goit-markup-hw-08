@@ -1,4 +1,9 @@
 .subscribe-form {
+  @media screen and (min-width: $tablet) {
+    margin-top: 60px;
+    width: 450px;
+  }
+
   // margin-left: auto;
 }
 
@@ -20,10 +25,10 @@
 }
 .subscribe-form__label {
   position: absolute;
+
   top: 22.5%;
   // top: 50%;
   left: 16px;
-
   transform: translateY(-50%);
 
   line-height: 1.25;
@@ -56,8 +61,13 @@
 .subscribe-form__input:not(:placeholder-shown) + .subscribe-form__label {
   pointer-events: none;
   color: $primary-color;
-  transform: translate(0, -45px);
-  // transform: translate(calc(-1 * (100% + 32px)), -50%);
+
+  @media screen and (max-width: 767px) {
+    transform: translate(0, -45px);
+  }
+  @media screen and (min-width: $tablet) {
+    transform: translate(calc(-1 * (100% + 32px)), -50%);
+  }
 }
 .subscribe-form__button {
   font-weight: 700;

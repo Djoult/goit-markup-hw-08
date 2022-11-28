@@ -1091,12 +1091,9 @@ body {
             align-items: baseline;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .footer__socials {
-    margin-bottom: 60px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1115,8 +1112,22 @@ body {
   color: #ffffff;
 }
 
-.address {
-  margin-bottom: 60px;
+@media screen and (max-width: 767px) {
+  .address {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-socials {
+    margin-left: 165px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-socials {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-socials__subtitle {
@@ -1142,6 +1153,13 @@ body {
 
 .socials__icon {
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-form {
+    margin-top: 60px;
+    width: 450px;
+  }
 }
 
 .subscribe-form__title {
@@ -1206,21 +1224,43 @@ body {
 .subscribe-form__input:not(:-moz-placeholder-shown) + .subscribe-form__label {
   pointer-events: none;
   color: #ffffff;
-  transform: translate(0, -45px);
 }
 
 .subscribe-form__input:not(:-ms-input-placeholder) + .subscribe-form__label {
   pointer-events: none;
   color: #ffffff;
-  transform: translate(0, -45px);
 }
 
 .subscribe-form__input:focus + .subscribe-form__label,
 .subscribe-form__input:not(:placeholder-shown) + .subscribe-form__label {
   pointer-events: none;
   color: #ffffff;
-  -webkit-transform: translate(0, -45px);
-          transform: translate(0, -45px);
+}
+@media screen and (max-width: 767px) {
+  .subscribe-form__input:not(:-moz-placeholder-shown) + .subscribe-form__label {
+    transform: translate(0, -45px);
+  }
+  .subscribe-form__input:not(:-ms-input-placeholder) + .subscribe-form__label {
+    transform: translate(0, -45px);
+  }
+  .subscribe-form__input:focus + .subscribe-form__label,
+.subscribe-form__input:not(:placeholder-shown) + .subscribe-form__label {
+    -webkit-transform: translate(0, -45px);
+            transform: translate(0, -45px);
+  }
+}
+@media screen and (min-width: 768px) {
+  .subscribe-form__input:not(:-moz-placeholder-shown) + .subscribe-form__label {
+    transform: translate(calc(-1 * (100% + 32px)), -50%);
+  }
+  .subscribe-form__input:not(:-ms-input-placeholder) + .subscribe-form__label {
+    transform: translate(calc(-1 * (100% + 32px)), -50%);
+  }
+  .subscribe-form__input:focus + .subscribe-form__label,
+.subscribe-form__input:not(:placeholder-shown) + .subscribe-form__label {
+    -webkit-transform: translate(calc(-1 * (100% + 32px)), -50%);
+            transform: translate(calc(-1 * (100% + 32px)), -50%);
+  }
 }
 
 .subscribe-form__button {
