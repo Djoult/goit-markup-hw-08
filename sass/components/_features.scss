@@ -1,19 +1,25 @@
-.features__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: $indent;
+@media screen and (min-width: 767px) {
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $indent;
+  }
+  .features__item {
+    $items: 2;
+    flex-basis: calc((100% - $indent * ($items - 1)) / ($items));
+    //   flex-basis: 270px;
+  }
 }
-.features__item {
-  $items: 2;
-  flex-basis: calc((100% - $indent * ($items - 1)) / ($items));
-  //   flex-basis: 270px;
-}
+
 .features__wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
   background-color: $team-section-bg-color;
+  @media screen and (max-width: calc($mobile - 1px)) {
+    width: 100%;
+  }
   @media screen and (min-width: $mobile) and (max-width: 767px) {
     width: 450px;
   }

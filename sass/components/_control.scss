@@ -2,11 +2,14 @@
   display: flex;
   text-align: center;
   align-items: center;
-  // justify-content: center;
-  justify-content: flex-start;
+
   gap: 8px;
   @media screen and (max-width: 767px) {
     max-width: 326px;
+    justify-content: flex-start;
+  }
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
   }
   flex-wrap: wrap;
 }
