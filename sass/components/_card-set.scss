@@ -1,7 +1,8 @@
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  // justify-content: center;
+  justify-content: flex-start;
   gap: $indent;
 }
 .card-set__item {
