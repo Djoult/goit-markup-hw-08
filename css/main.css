@@ -1004,11 +1004,6 @@ body {
 .clients__title {
   margin-bottom: 30px;
 }
-@media screen and (min-width: 480px) {
-  .clients__title {
-    margin-bottom: 30px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .clients__title {
     margin-bottom: 50px;
@@ -1033,12 +1028,20 @@ body {
 }
 @media screen and (max-width: 767px) {
   .clients__item {
-    width: 210px;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .clients__item {
-    width: 226px;
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    -ms-flex-preferred-size: calc((100% - 150px) / 6);
+        flex-basis: calc((100% - 150px) / 6);
   }
 }
 
@@ -1720,8 +1723,8 @@ body {
 }
 
 .card-set__item {
-  -ms-flex-preferred-size: calc((100% - 30px) * 1)/2;
-      flex-basis: calc((100% - 30px) * 1)/2;
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);

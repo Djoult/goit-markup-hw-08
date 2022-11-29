@@ -1,8 +1,5 @@
 .clients__title {
   margin-bottom: 30px;
-  @media screen and (min-width: $mobile) {
-    margin-bottom: 30px;
-  }
 
   @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
@@ -17,10 +14,16 @@
 }
 .clients__item {
   @media screen and (max-width: 767px) {
-    width: 210px;
+    $items: 2;
+    flex-basis: calc((100% - $indent * ($items - 1)) / ($items));
   }
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
-    width: 226px;
+    $items: 3;
+    flex-basis: calc((100% - $indent * ($items - 1)) / ($items));
+  }
+  @media screen and (min-width: $desktop) {
+    $items: 6;
+    flex-basis: calc((100% - $indent * ($items - 1)) / ($items));
   }
   display: block;
 }
