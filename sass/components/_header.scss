@@ -15,7 +15,7 @@
     padding-top: 16px;
     padding-bottom: 16px;
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     position: absolute;
     left: 15px;
     padding-top: 24px;

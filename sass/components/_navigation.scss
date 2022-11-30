@@ -18,6 +18,11 @@
     // transform: translateY(-50%);
     display: flex;
   }
+  @media screen and (min-width: $desktop) {
+    width: 100%;
+    margin-left: 93px;
+    margin-right: 0;
+  }
 }
 .menu {
   display: flex;
