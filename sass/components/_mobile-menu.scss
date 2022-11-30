@@ -34,11 +34,12 @@
   position: fixed;
   top: 0;
   left: 0;
+  display: flex;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
-  // padding: 48px 40px;
+  padding: 48px 40px;
   text-align: left;
-  padding: 8.333vh 8.333vw;
   background-color: $primary-color;
   z-index: 999;
   opacity: 0;
@@ -57,13 +58,10 @@
 }
 
 .mobile-menu__item:not(:last-child) {
-  // margin-bottom: 32px;
-  margin-bottom: 4vh;
+  margin-bottom: 32px;
 }
 .mobile-menu {
-  // margin-bottom: 302px;
-  // margin-bottom: 38vh;
-  margin-bottom: 25vh;
+  margin-bottom: auto;
 }
 .mobile-menu__link {
   display: block;
@@ -83,8 +81,7 @@
 }
 
 .mobile-contacts {
-  // margin-bottom: 64px;
-  margin-bottom: 8vh;
+  margin-bottom: 64px;
 }
 .mobile-contacts__item:first-child {
   font-weight: 500;
@@ -92,8 +89,7 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: $accent-color;
-  // margin-bottom: 32px;
-  margin-bottom: 4vh;
+  margin-bottom: 32px;
 }
 .mobile-contacts__item:nth-child(2) {
   font-weight: 500;
@@ -107,8 +103,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  // gap: 20px;
-  gap: 4vw;
+  gap: 20px;
 }
 .mobile-socials__item {
   position: relative;

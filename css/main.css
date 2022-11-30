@@ -484,10 +484,17 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100vw;
   height: 100vh;
+  padding: 48px 40px;
   text-align: left;
-  padding: 8.333vh 8.333vw;
   background-color: #ffffff;
   z-index: 999;
   opacity: 0;
@@ -509,11 +516,11 @@ body {
 }
 
 .mobile-menu__item:not(:last-child) {
-  margin-bottom: 4vh;
+  margin-bottom: 32px;
 }
 
 .mobile-menu {
-  margin-bottom: 25vh;
+  margin-bottom: auto;
 }
 
 .mobile-menu__link {
@@ -534,7 +541,7 @@ body {
 }
 
 .mobile-contacts {
-  margin-bottom: 8vh;
+  margin-bottom: 64px;
 }
 
 .mobile-contacts__item:first-child {
@@ -543,7 +550,7 @@ body {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196f3;
-  margin-bottom: 4vh;
+  margin-bottom: 32px;
 }
 
 .mobile-contacts__item:nth-child(2) {
@@ -563,7 +570,7 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 4vw;
+  gap: 20px;
 }
 
 .mobile-socials__item {
