@@ -1,11 +1,12 @@
 .footer-socials {
-  @media screen and (min-width: $tablet) {
-    margin-left: 165px;
-  }
-}
-.footer-socials {
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-left: 165px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
   }
 }
 

@@ -20,3 +20,8 @@
     // gap: 60px;
   }
 }
+.footer__nav {
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
+}
