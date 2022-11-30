@@ -1970,18 +1970,19 @@ body {
   letter-spacing: 0.03em;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  padding: 77px 24px;
 }
 @media screen and (min-width: 480px) {
   .product__info {
     padding: 77px 24px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .product__info {
     padding-top: 49px;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .product__info {
     padding-top: 63px;
     padding-bottom: 63px;
@@ -1992,12 +1993,6 @@ body {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .card-set__item:first-child .product__meta {
-    padding-bottom: 56px;
-  }
 }
 
 .product__name {
