@@ -1,4 +1,4 @@
-@media screen and (min-width: 767px) {
+@media screen and (min-width: $tablet) {
   .features__list {
     display: flex;
     flex-wrap: wrap;
@@ -28,7 +28,7 @@
   }
   height: 120px;
 }
-@media screen and (max-width: calc($tablet - 1px)) {
+@media screen and (max-width: 767px) {
   .features__item:not(:last-child) {
     margin-bottom: 30px;
   }

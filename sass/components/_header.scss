@@ -8,14 +8,14 @@
 }
 
 .header__logo {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet) {
     position: absolute;
     top: 0;
     left: 15px;
     padding-top: 16px;
     padding-bottom: 16px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     position: absolute;
     left: 15px;
     padding-top: 24px;

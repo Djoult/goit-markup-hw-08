@@ -4,12 +4,13 @@
   align-items: center;
 
   gap: 8px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     max-width: 326px;
     justify-content: flex-start;
   }
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: 768px) {
     justify-content: center;
+    max-width: 100%;
   }
   flex-wrap: wrap;
 }
@@ -17,7 +18,7 @@
   margin-bottom: 50px;
 }
 .control__item {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     &:nth-last-child(-n + 2) {
       margin-top: 2px;
     }

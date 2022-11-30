@@ -17,17 +17,17 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   // flex-basis: 354px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
   }
-  @media screen and (min-width: $tablet) and (max-width: (calc($desktop - 1px))) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
     flex-basis: 354px;
   }
 }
 
-@media screen and (max-width: calc($tablet - 1px)) {
+@media screen and (max-width: $tablet) {
 }
 .teammate__photo {
   width: 100%;
