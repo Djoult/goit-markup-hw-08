@@ -18,7 +18,7 @@
   margin-bottom: 50px;
 }
 .control__item {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     &:nth-last-child(-n + 2) {
       margin-top: 2px;
     }
