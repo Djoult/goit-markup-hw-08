@@ -18,6 +18,9 @@
   text-transform: uppercase;
   color: $primary-color;
   margin-bottom: 20px;
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .socials__link--dark {
