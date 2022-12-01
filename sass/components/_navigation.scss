@@ -6,22 +6,22 @@
   // position: relative;
 }
 .navigation {
+  display: flex;
+  width: 100%;
   @media screen and (max-width: $tablet) {
     display: none;
   }
-  @media screen and (min-width: $tablet) {
-    margin-left: auto;
-    margin-right: auto;
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
+    margin-left: 87px;
+    // margin-right: auto;
     // position: absolute;
     // left: 236px;
     // top: 50%;
     // transform: translateY(-50%);
-    display: flex;
   }
   @media screen and (min-width: $desktop) {
-    width: 100%;
     margin-left: 93px;
-    margin-right: 0;
+    // margin-right: 0;
   }
 }
 .menu {

@@ -5,11 +5,7 @@
   align-items: center;
   justify-content: center;
 
-  position: absolute;
-  top: 10px;
-  right: 15px;
-
-  margin: 0;
+  margin-left: auto;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -24,6 +20,11 @@
   @media screen and (min-width: $tablet) {
     display: none;
   }
+}
+.js-close-menu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 .js-open-menu__icon,
 .js-close-menu__icon {
