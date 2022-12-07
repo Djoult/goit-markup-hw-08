@@ -11,7 +11,7 @@
     flex-basis: calc((100% - $indent * ($items - 1)) / ($items));
     @media screen and (min-width: $desktop) {
       $items: 3;
-    flex-basis: calc((100% - $indent * ($items - 1)) / ($items));
+      flex-basis: calc((100% - $indent * ($items - 1)) / ($items));
     }
     transition: box-shadow $timing-function;
     &:hover {
